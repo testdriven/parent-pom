@@ -7,7 +7,7 @@
 
 	<groupId>org.testdriven</groupId>
 	<artifactId>testdriven</artifactId>
-	<version>2</version>
+	<version>3</version>
 	<packaging>pom</packaging>
 
 	<name>testdriven.org :: Parent POM</name>
@@ -59,6 +59,13 @@
 							<version>1.8.6-01</version>
 						</dependency>
 					</dependencies>
+				</plugin>
+				<plugin>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.2.2</version>
+					<configuration>
+						<tagNameFormat>@{version}</tagNameFormat>
+					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
